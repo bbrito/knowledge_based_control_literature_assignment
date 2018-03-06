@@ -1,0 +1,29 @@
+% !TEX root = ../main.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTRODUCTION}
+
+In the near future robots will daily navigate with us in our cities, sharing our roads, channels and aerospace. The successful introduction of robots in our society, strongly depends on their ability to learn and comply with social rules. If this social rules are not included into navigation algorithm would lead to a "frozen" robot. As soon as the number of navigating agents increase, the robot will not be able to find a feasible path, which is know as the "Frozen Robot Problem" (FRP) \cite{Trautman2013}.
+
+Modelling the interaction behavior of humans has been presented as a promising approach to incorporate social navigation skills into the robots and solve FRP. In order to obtain such model, features may be estimated from the observed human behavior. However, such features lie in a highly dimensional space making it impossible to explore the entire space to find the feature which best approximate the human behavior \cite{Kretzschmar2016}.
+
+Markov Chain Monte Carlo (MCMC) is one of the most revolutionizing methods of the 20st century. The idea was born on the 50's, when a scientist while playing solitaire ask himself what was the probability of winning the game by knowing its initial cards. In order to solve the problem analytically would be necessary to compute the total number of configurations, which is equivalent to the number of atoms in the Milky Way. MCMC overcomes this issue and enables fast and complex estimation of very complex parameters which are analytically intractable \cite{Pedersen2017}.  
+
+To do that, you run a few computer simulations (Monte Carlo simulation) and use the obtained data to estimate how the probability distribution looks like.
+
+Monte Carlo generation of random samples with some probability distribution.
+
+Markov chain is a sequence of numbers where each number is dependent on the previous number on the sequence.
+
+Metropolis-hastings algorithm: is used to decide each values to accept of reject. 
+
+
+The idea: 
+
+useful for large state spaces
+needs a lot of samples to get a good estimated
+planning time is independent of the number of state spaces
+running time exponential in the horizon
+
+$O((\norm{A}x)^H)$ with $A$ as the action space, $H$ as the horizon
+\cite{Pedersen2017}
